@@ -11,14 +11,14 @@ class UserController extends Controller
     {
 		$em=$this->getDoctrine()->getManager();
 		$users=$em->getRepository("DOGPruebaBundle:User")->findAll();
-		$res="users: <br />";
+		/*$res="users: <br />";
 		foreach($users as $user){
 			$res.= 'Usuario'.$user->getUsuario().' email:'.$user->getEmail().'<br />';
 		}
 		
-		return new Response($res);
-		
-        //return $this->render('DOGPruebaBundle:Default:index.html.twig', array('name' => $name));
+		return new Response($res);*/
+	
+        return $this->render('DOGPruebaBundle:User:index.html.twig', array('users' => $users));
     }
 	
 	public function viewAction($id){
