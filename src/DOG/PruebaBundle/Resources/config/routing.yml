@@ -1,0 +1,23 @@
+dog_prueba_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: DOGPruebaBundle:Default:index }
+
+dog_prueba_index:
+    path:     /user/index
+    defaults: { _controller: DOGPruebaBundle:User:index }
+
+dog_prueba_add:
+    path:     /user/add
+    defaults: { _controller: DOGPruebaBundle:User:add }
+
+dog_prueba_edit:
+    path:     /user/edit/{id}
+    defaults: { _controller: DOGPruebaBundle:User:edit }
+
+dog_prueba_view:
+    path:     /user/view/{id}
+    defaults: { _controller: DOGPruebaBundle:User:view }
+
+dog_prueba_delete:
+    path:     /user/delete/{id}
+    defaults: { _controller: DOGPruebaBundle:User:delete }

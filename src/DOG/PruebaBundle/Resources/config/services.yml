@@ -1,0 +1,4 @@
+services:
+#    dog_prueba.example:
+#        class: DOG\PruebaBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
